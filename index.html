@@ -97,21 +97,11 @@
             overflow: hidden;
         }
 
-        .logo-placeholder::before {
-            content: 'CCP';
-            font-family: 'Orbitron', sans-serif;
-            font-size: 28px;
-            font-weight: 900;
-            color: var(--gold);
-            letter-spacing: 2px;
-        }
-
-        .logo-placeholder .hint {
-            position: absolute;
-            bottom: 8px;
-            font-size: 9px;
-            color: var(--text-muted);
-            letter-spacing: 1px;
+        .logo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .main-title {
@@ -251,19 +241,11 @@
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
         }
 
-        .photo-placeholder::after {
-            content: '📷';
-            font-size: 28px;
-            opacity: 0.4;
-        }
-
-        .photo-placeholder .hint {
-            position: absolute;
-            bottom: 4px;
-            font-size: 8px;
-            color: var(--text-muted);
+        .photo-placeholder img {
             width: 100%;
-            text-align: center;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .role {
@@ -332,9 +314,6 @@
                 width: 110px;
                 height: 110px;
             }
-            .logo-placeholder::before {
-                font-size: 22px;
-            }
             .hierarchy {
                 grid-template-columns: 1fr;
             }
@@ -347,8 +326,8 @@
     <div class="container">
         <!-- HERO -->
         <header>
-            <div class=<img src="logo.png">
-                <span class="hint">LOGO এখানে</span>
+            <div class="logo-placeholder">
+                <img src="photo.jpg" alt="CCP Logo">
             </div>
             <h1 class="main-title">CCP</h1>
             <p class="subtitle">Cyber Crime Protector</p>
@@ -368,7 +347,7 @@
             <!-- OWNER -->
             <div class="member-card owner">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="Professor DIP">
                 </div>
                 <div class="role">OWNER</div>
                 <div class="name">Professor DIP</div>
@@ -376,8 +355,8 @@
 
             <!-- D.OWNER -->
             <div class="member-card owner">
-                <div class=<img src="photo.jpg">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="LEVI">
                 </div>
                 <div class="role">D. OWNER</div>
                 <div class="name">LEVI</div>
@@ -385,8 +364,8 @@
 
             <!-- ASS OWNER -->
             <div class="member-card">
-                <div class=img src="photo.jpg">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="ASS OWNER">
                 </div>
                 <div class="role">ASS OWNER</div>
                 <div class="name empty">— Vacant —</div>
@@ -394,8 +373,8 @@
 
             <!-- FOUNDER -->
             <div class="member-card founder">
-                <div class=img src="">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="FOUNDER">
                 </div>
                 <div class="role">FOUNDER</div>
                 <div class="name">FOUNDER</div>
@@ -403,8 +382,8 @@
 
             <!-- D.FOUNDER -->
             <div class="member-card founder">
-                <div class=img src="photo.jpg">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="MAHABUB">
                 </div>
                 <div class="role">D. FOUNDER</div>
                 <div class="name">MAHABUB</div>
@@ -412,8 +391,8 @@
 
             <!-- ASS FOUNDER -->
             <div class="member-card">
-                <div class=img src="photo.jpg1">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="ASS FOUNDER">
                 </div>
                 <div class="role">ASS FOUNDER</div>
                 <div class="name empty">— Vacant —</div>
@@ -421,8 +400,8 @@
 
             <!-- BOSS -->
             <div class="member-card">
-                <div class=img src="photo.jpg2">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="AKANTO">
                 </div>
                 <div class="role">BOSS (Mission Checker)</div>
                 <div class="name">AKANTO</div>
@@ -431,7 +410,7 @@
             <!-- PRECEDENT -->
             <div class="member-card">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="PRECEDENT">
                 </div>
                 <div class="role">PRECEDENT (CCP)</div>
                 <div class="name empty">— Vacant —</div>
@@ -440,7 +419,7 @@
             <!-- CEO -->
             <div class="member-card">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="CEO">
                 </div>
                 <div class="role">CEO</div>
                 <div class="name empty">— Vacant —</div>
@@ -448,8 +427,8 @@
 
             <!-- D.CEO -->
             <div class="member-card">
-                <div class=img src="photo.jpg4">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="RAFSAN">
                 </div>
                 <div class="role">D. CEO</div>
                 <div class="name">RAFSAN</div>
@@ -457,8 +436,8 @@
 
             <!-- ADD CEO -->
             <div class="member-card">
-                <div class=img src="photo.jpg5">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="RUIYAT">
                 </div>
                 <div class="role">ADD CEO</div>
                 <div class="name">RUIYAT</div>
@@ -466,8 +445,8 @@
 
             <!-- CONTROLLER -->
             <div class="member-card">
-                <div class=img src="photo.jpg6">
-                    <span class="hint">PHOTO</span>
+                <div class="photo-placeholder">
+                    <img src="photo.jpg" alt="LABIB">
                 </div>
                 <div class="role">CONTROLLER</div>
                 <div class="name">LABIB</div>
@@ -476,7 +455,7 @@
             <!-- ADMIN -->
             <div class="member-card">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="ADMIN">
                 </div>
                 <div class="role">ADMIN</div>
                 <div class="name empty">— Vacant —</div>
@@ -485,7 +464,7 @@
             <!-- J.ADMIN -->
             <div class="member-card">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="J. ADMIN">
                 </div>
                 <div class="role">J. ADMIN</div>
                 <div class="name empty">— Vacant —</div>
@@ -494,7 +473,7 @@
             <!-- AGENT -->
             <div class="member-card">
                 <div class="photo-placeholder">
-                    <span class="hint">PHOTO</span>
+                    <img src="photo.jpg" alt="AGENT">
                 </div>
                 <div class="role">AGENT</div>
                 <div class="name empty">— Vacant —</div>
@@ -508,4 +487,4 @@
         </footer>
     </div>
 </body>
-                </html>
+                        </html>
